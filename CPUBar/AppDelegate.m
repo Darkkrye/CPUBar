@@ -27,14 +27,6 @@
     processor_count = 0;
     processor_list = (processor_port_array_t)0;
     [NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
-    
-    NSResponder * next = [self nextResponder];
-    while (next) {
-        // Is NSTouchBar provider?
-        //  - YES, break
-        //  - NO,
-        next = [next nextResponder];
-    }
 }
 
 #pragma mark
